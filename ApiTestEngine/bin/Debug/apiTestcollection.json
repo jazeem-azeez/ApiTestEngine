@@ -1,0 +1,55 @@
+{
+  "ApiRequestModelsCollection": {
+    "sas-token-post": {
+      "ApiId": "sas-token-post",
+      "Host": "{{service-route}}",
+      "HttpMethod": "POST",
+      "URI": "/api/v1/gateway/sas-tokens/",
+      "Headers": {
+        "tenantId": "{{tenantId}}",
+        "Authorization": "Bearer {{access_token}}"
+      },
+      "PayLoadBody": "{\r\n  \"id\": \"740cbcb4-1243-2ec6-c771-7e96e3c88f4f\",\r\n  \"tenantId\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"IsEnabled\": true,\r\n  \"keys\": [\r\n    {\r\n      \"Key\": \"de42f476-7189-0de3-7ebf-ecf426c1746e\",\r\n      \"Value\": \"Endpoint=sb://sbusegeostage.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=dxP3dIfbytGUVQwG/X9zfaLzzBJYWhf5RgZwctNBFjc=\",\r\n      \"Permission\": 3\r\n    }\r\n  ]\r\n}",
+      "ResponseStoreKey": "sas-token-post",
+      "StoreType": "local",
+      "ExpectedResponse": [],
+      "ExpectedStatusCode": [ 201, 409 ],
+      "AssertScript": "",
+      "ContentType": "application/json"
+    },
+    "identity": {
+      "ApiId": "identity",
+      "Host": "{{identity-route}}",
+      "HttpMethod": "POST",
+      "URI": "/connect/token/",
+      "Headers": {
+      },
+      "PayLoadBody": "client_id=25f6041762b7447fb5329747dccd7935&client_secret=P0stM6n&scope=PostMan-Shared&grant_type=client_credentials",
+      "ResponseStoreKey": "access_token",
+      "StoreType": "global",
+      "ExpectedResponse": [],
+      "ExpectedStatusCode": [ 200 ],
+      "AssertScript": "none",
+      "ContentType": "application/x-www-form-urlencoded"
+    }
+  },
+  "ApiPlaylistCollection": {
+    "play1": {
+      "PlayListId": "play1",
+      "Description": "dummy",
+      "ApiModelIds": [ "sas-token-post" ],
+      "LocalVariablesCollection": {
+        "{{tenantId}}": "04b93955-891c-4725-b976-4325c6a53af7",
+        "{{service-route}}": "http://itron-sf-use-pms-dev.eastus.cloudapp.azure.com:19008/Itron.Cloud.HybridConnector.Gateway.Services/Api",
+        "{{identity-route}}": "https://westus-qa-identityserver.azurewebsites.net",
+        "{{identity_client_id}}": "25f6041762b7447fb5329747dccd7935",
+        "{{identity_client_secret}}": "P0stM6n",
+        "{{identity_scope}}": "PostMan-Shared"
+      }
+    }
+  },
+  "GlobalVariablesCollection": {
+    "{{tenantId}}": "04b93955-891c-4725-b976-4325c6a53af7",
+    "{{correlationId}}": "14b93955-891c-4725-b976-4325c6a53af9"
+  }
+}
