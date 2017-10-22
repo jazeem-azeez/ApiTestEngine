@@ -1,0 +1,9 @@
+c:\users\jazeez\onedrive - itron\documents\visual studio 2017\Projects\TestClassGenerator\TestClassGenerator\bin\Debug\TestClassGenerator.exe.config
+c:\users\jazeez\onedrive - itron\documents\visual studio 2017\Projects\TestClassGenerator\TestClassGenerator\bin\Debug\TestClassGenerator.exe
+c:\users\jazeez\onedrive - itron\documents\visual studio 2017\Projects\TestClassGenerator\TestClassGenerator\bin\Debug\TestClassGenerator.pdb
+c:\users\jazeez\onedrive - itron\documents\visual studio 2017\Projects\TestClassGenerator\TestClassGenerator\obj\Debug\TestClassGenerator.csprojResolveAssemblyReference.cache
+c:\users\jazeez\onedrive - itron\documents\visual studio 2017\Projects\TestClassGenerator\TestClassGenerator\obj\Debug\TestClassGenerator.csproj.CoreCompileInputs.cache
+c:\users\jazeez\onedrive - itron\documents\visual studio 2017\Projects\TestClassGenerator\TestClassGenerator\obj\Debug\TestClassGenerator.exe
+c:\users\jazeez\onedrive - itron\documents\visual studio 2017\Projects\TestClassGenerator\TestClassGenerator\obj\Debug\TestClassGenerator.pdb
+c:\users\jazeez\onedrive - itron\documents\visual studio 2017\Projects\TestClassGenerator\TestClassGenerator\bin\Debug\Newtonsoft.Json.dll
+c:\users\jazeez\onedrive - itron\documents\visual studio 2017\Projects\TestClassGenerator\TestClassGenerator\bin\Debug\Newtonsoft.Json.xml

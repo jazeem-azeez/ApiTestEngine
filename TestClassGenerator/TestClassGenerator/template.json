@@ -1,0 +1,8 @@
+﻿{
+  "FunctionDefPrefix": "[TestMethod()]",
+  "FunctionDefPostfix": "",
+  "FunctionBodySource": "C:\\Users\\jazeez\\OneDrive - Itron\\Documents\\Visual Studio 2017\\Projects\\TestClassGenerator\\TestClassGenerator\\FunctionTemaplate.txt",
+  "ClassDefPostFix": "",
+  "ClassDefPreFix": "[TestClass()]",
+  "ClassBodySource": "C:\\Users\\jazeez\\OneDrive - Itron\\Documents\\Visual Studio 2017\\Projects\\TestClassGenerator\\TestClassGenerator\\ClassTemplate.txt"
+}

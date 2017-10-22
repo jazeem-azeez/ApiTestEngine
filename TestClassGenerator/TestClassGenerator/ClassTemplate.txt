@@ -1,0 +1,32 @@
+﻿using Itron.Cloud.HybridConnector.Gateway.Common.Settings;
+using Itron.Cloud.HybridConnector.Gateway.Proxy.Helpers.UriBuilders;
+using Itron.Platform.Logging;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
+using System;
+namespace  ///<NameSpaceName/>
+   {
+   [TestClass()]
+	   public class ///<ClassName/>
+	   {
+	    private Mock<IApplicationSettings> _mockAppSettings;
+        private Mock<IApplicationSettingsService> _mockAppSettingService;
+        private Mock<ILogger> _mockLogger;
+        private string configId = Guid.NewGuid().ToString();
+        private string tenantId = Guid.NewGuid().ToString();
+        private string emptyTenant = Guid.Empty.ToString();
+
+        [TestInitialize]
+        public void Initialize()
+        {
+            _mockLogger = new Mock<ILogger>();
+            _mockAppSettings = new Mock<IApplicationSettings>();
+            _mockAppSettingService = new Mock<IApplicationSettingsService>();
+            _mockAppSettingService.Setup(c => c.GetAppSettings()).Returns(_mockAppSettings.Object);
+            _mockAppSettings.SetupGet(c => c.ConfigUriPreFix).Returns("api/v1");
+        }
+
+		///<FunctionBody/>
+		
+		}
+	}
