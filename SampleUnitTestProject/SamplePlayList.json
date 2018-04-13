@@ -1,0 +1,50 @@
+﻿{
+  "ApiRequestModelsCollection": {
+    "identity": {
+      "ApiId": "identity",
+      "Host": "{{identity_route}}",
+      "HttpMethod": "POST",
+      "URI": "/connect/token/",
+      "Headers": {
+      },
+      "PayLoadBody": "client_id=25f6041762b7447fb5329747dccd7935&client_secret=P0stM6n&scope=PostMan-Shared&grant_type=client_credentials",
+      "ResponseStoreKey": "access_token",
+      "StoreType": "global",
+      "ExpectedResponse": [],
+      "ExpectedStatusCode": [ 200 ],
+      "AssertScript": "none",
+      "ContentType": "application/x-www-form-urlencoded"
+    },
+    "mockget": {
+      "ApiId": "mockget",
+      "Host": "http://www.mocky.io",
+      "HttpMethod": "GET",
+      "URI": "/v2/5ad0b9303000005600534a85",
+      "Headers": {
+      },
+      "PayLoadBody": "",
+      "ResponseStoreKey": "mockget_hello",
+      "StoreType": "global",
+      "ExpectedResponse": [ "helloget" ],
+      "ExpectedStatusCode": [ 200 ],
+      "AssertScript": "none",
+      "ContentType": "application/x-www-form-urlencoded"
+    }
+  },
+
+  "ApiPlaylistCollection": {
+    "play1": {
+      "PlayListId": "play1",
+      "Description": "dummy",
+      "ApiModelIds": [ "sas-token-post" ],
+      "LocalVariablesCollection": {
+
+      }
+    }
+  },
+  "GlobalVariablesCollection": {
+    "{{tenantId}}": "04b93955-891c-4725-b976-4325c6a53af7",
+    "{{correlationId}}": "14b93955-891c-4725-b976-4325c6a53af9",
+    "{{identity_route}}": ""
+  }
+}
